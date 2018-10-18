@@ -83,7 +83,7 @@ for i in range(15):
   node.addService(pg.Execute(shell="sh", command="sudo chmod 755 /local/repository/ssh_setup.sh"))
   node.addService(pg.Execute(shell="sh", command="sudo -H -u sa834534 bash -c '/local/repository/ssh_setup.sh'"))
  
-  node.addService(pg.Execute(shell="sh", command="sudo su ka837933 -c 'cp /local/repository/source/* /users/sa834534'"))
+  node.addService(pg.Execute(shell="sh", command="sudo su sa834534 -c 'cp /local/repository/source/* /users/sa834534'"))
   
 # Print the RSpec to the enclosing page.
 pc.printRequestRSpec(request)
