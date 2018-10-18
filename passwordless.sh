@@ -84,7 +84,7 @@ chmod 600 $SSHDIR/authorized_keys
 
 
 CUSTOM_USER=sa834534
-CUSTOM_SSHDIR=/users/ka837933/.ssh
+CUSTOM_SSHDIR=/users/sa834534/.ssh
 CUSTOM_GROUP=`id -gn ${CUSTOM_USER}`
 
 cp $PRIVKEY ${CUSTOM_SSHDIR}
