@@ -84,13 +84,13 @@ chmod 600 $SSHDIR/authorized_keys
 
 
 CUSTOM_USER=ka837933
-CUSTOM_SSHDIR=/users/sa834534/.ssh
+CUSTOM_SSHDIR=/users/ka837933/.ssh
 CUSTOM_GROUP=`id -gn ${CUSTOM_USER}`
 
 cp $PRIVKEY ${CUSTOM_SSHDIR}
 cp $PUBKEY ${CUSTOM_SSHDIR}
 cat $PUBKEY >> ${CUSTOM_SSHDIR}/authorized_keys
 chown -R ${CUSTOM_USER}:${CUSTOM_GROUP} ${CUSTOM_SSHDIR}
-su sa834534 -c 'echo "StrictHostKeyChecking no" > ${CUSTOM_SSHDIR}/config'
+su ka837933 -c 'echo "StrictHostKeyChecking no" > ${CUSTOM_SSHDIR}/config'
 
 exit 0
