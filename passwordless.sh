@@ -83,7 +83,7 @@ cat $PUBKEY >> $SSHDIR/authorized_keys
 chmod 600 $SSHDIR/authorized_keys
 
 
-CUSTOM_USER=ka837933
+CUSTOM_USER=sa834534
 CUSTOM_SSHDIR=/users/ka837933/.ssh
 CUSTOM_GROUP=`id -gn ${CUSTOM_USER}`
 
